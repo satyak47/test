@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(248, 248, 248);
+  max-width: 100%;
+  padding: 50px;
+}
+
+.container {
+  display: flex;
+  max-width: 768px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+
+.image-container {
+  margin-right: 20px;
+}
+
+.image-container img {
+  height: 600px;
+  filter: drop-shadow(0 1px 4px gray);
+  -webkit-filter: drop-shadow(0 1px 4px gray);
+}
+
+
+.form-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.card {
+  width: 270px;
+  margin: 5px 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(210, 210, 210);
+  padding: 20px 40px;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.input-form {
+  width: 100%;
+  max-width: 250px;
+  height: 30px;
+  margin: 3px 0;
+  padding: 2px 10px;
+  background-color: rgb(247, 247, 247);
+  border: 0.6px solid rgb(210, 210, 210);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  outline: none;
+}
+
+.input-form:focus {
+  border: 0.6px solid rgb(150, 150, 150) !important;
+}
+
+.input-form::placeholder {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.logo {
+  width: 200px;
+  margin: 20px 0;
+}
+
+.btn-login {
+  padding: 8px;
+  width: 100%;
+  margin: 10px 0;
+  background-color: #4CB5F9;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-facebook {
+  padding: 8px;
+  margin: 5px;
+  width: 100%;
+  background-color: transparent;
+  color: rgb(22, 15, 129);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-facebook img {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.btn-forgot-password {
+  padding: 8px;
+  width: 100%;
+  background-color: transparent;
+  color: rgb(61, 58, 66);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 12px;
+  margin: 5px;
+}
+
+.card hr {
+  width: 100%;
+  margin: 10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 0.5px solid rgb(199, 199, 199);
+}
+
+.regist-link {
+  text-decoration: none;
+  color: rgb(44, 141, 252);
+  font-weight: bold;
+}
+
+.register-text {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.get-apps {
+  text-align: center;
+}
+
+.get-apps p {
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.btn_image {
+  text-decoration: none;
+  margin: 0 2px;
+}
+
+footer {
+  margin-top: 50px;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+footer .footer-link {
+  width: 768px;
+  max-width: 100%;
+}
+
+footer a {
+  margin: 0 8px;
+  text-decoration: none;
+  color: rgb(150, 150, 150);
+  font-size: 12px;
+}
+
+footer a:hover {
+  color: rgb(61, 58, 66)
+}
+
+footer .footer-copyright {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  color: rgb(150, 150, 150);
+  font-size: 12px;
+}
+
+footer .footer-copyright select {
+  border: none;
+  background-color: transparent;
+  color: rgb(150, 150, 150);
+  outline: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+@media (max-width: 900px) {
+  .image-container {
+    display: none;
+  }
+}
